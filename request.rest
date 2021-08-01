@@ -1,0 +1,73 @@
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+    "username": "John Smith",
+    "password": "pass123"
+}
+
+###
+
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+    "username": "John Smith"
+}
+
+###
+
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+    "password": "pass123"
+}
+
+###
+
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "username": "John Smith",
+    "password": "pass123"
+}
+
+###
+
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "username": "John Smith",
+    "password": "wrongpassword"
+}
+
+###
+
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "username": "John Doesnotexist",
+    "password": "pass123"
+}
+
+###
+
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "username": "John Smith"
+}
+
+###
+
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "password": "pass123"
+}
